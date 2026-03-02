@@ -1,0 +1,110 @@
+"use client";
+
+import * as React from "react";
+import Link from "next/link";
+import { Menu, X, GraduationCap } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
+import { siteInfo } from "@/lib/data";
+import { ThemeToggle } from "@/components/theme-toggle";
+
+const navItems = [
+  { name: "Home", href: "/" },
+  { name: "Blogs", href: "/blog" },
+  { name: "Branches", href: "/branches" },
+  { name: "Contact", href: "/contact" },
+];
+
+export function Navbar() {
+  const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
+  const [scrolled, setScrolled] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <motion.nav
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+      className={cn(
+        "fixed top-0 z-50 w-full border-b transition-all duration-300",
+        scrolled
+          ? "bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 shadow-sm"
+          : "bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+      )}
+    >
+      <div className="container mx-auto px-4">
+        <div className="flex h-16 items-center justify-between">
+          <Link
+            href="/"
+            className="flex items-center space-x-3 text-xl font-bold"
+          >
+            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
+              <GraduationCap className="h-6 w-6 text-primary-foreground" />
+            </div>
+            <span className="text-foreground">{siteInfo.name}</span>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-4">
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors relative group"
+              >
+                {item.name}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
+              </Link>
+            ))}
+            <ThemeToggle />
+          </div>
+
+          {/* Mobile Menu Button */}
+          <div className="flex md:hidden items-center space-x-2">
+            <ThemeToggle />
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? (
+                <X className="h-5 w-5" />
+              ) : (
+                <Menu className="h-5 w-5" />
+              )}
+            </Button>
+          </div>
+        </div>
+
+        {/* Mobile Navigation */}
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden py-4 space-y-2 border-t"
+          >
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="block px-3 py-2 text-sm font-medium text-foreground/80 hover:text-foreground hover:bg-accent rounded-md transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </motion.div>
+        )}
+      </div>
+    </motion.nav>
+  );
+}
