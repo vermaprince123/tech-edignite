@@ -40,6 +40,12 @@ export const metadata: Metadata = {
     description: siteInfo.description,
     type: "website",
   },
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
+  manifest: "/manifest.json",
+  themeColor: "#3b82f6",
   viewport: {
     width: "device-width",
     initialScale: 1,

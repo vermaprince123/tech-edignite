@@ -2,7 +2,8 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Menu, X, GraduationCap } from "lucide-react";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
@@ -46,8 +47,15 @@ export function Navbar() {
             href="/"
             className="flex items-center space-x-3 text-xl font-bold"
           >
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <GraduationCap className="h-6 w-6 text-primary-foreground" />
+            <div className="relative w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center">
+              <Image
+                src="/logo.png"
+                alt={`${siteInfo.name} Logo`}
+                width={40}
+                height={40}
+                className="object-contain"
+                priority
+              />
             </div>
             <span className="text-foreground">{siteInfo.name}</span>
           </Link>

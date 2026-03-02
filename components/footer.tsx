@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Mail, Phone, MapPin, ExternalLink, GraduationCap } from "lucide-react";
+import Image from "next/image";
+import { Mail, Phone, MapPin, ExternalLink } from "lucide-react";
 import { siteInfo } from "@/lib/data";
 import { motion } from "framer-motion";
 
@@ -15,8 +16,14 @@ export function Footer() {
           {/* Brand Section */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <GraduationCap className="h-6 w-6 text-primary-foreground" />
+              <div className="relative w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center">
+                <Image
+                  src="/logo.png"
+                  alt={`${siteInfo.name} Logo`}
+                  width={40}
+                  height={40}
+                  className="object-contain"
+                />
               </div>
               <span className="text-xl font-bold text-foreground">
                 {siteInfo.name}
