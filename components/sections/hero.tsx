@@ -1,10 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, BookOpen, GraduationCap, TrendingUp } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, BookOpen, GraduationCap, TrendingUp, FileText } from "lucide-react";
 import { siteInfo } from "@/lib/data";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 export function Hero() {
   return (
@@ -83,6 +83,17 @@ export function Hero() {
                 <BookOpen className="h-5 w-5" />
                 Explore Blogs
                 <ArrowRight className="h-5 w-5" />
+              </Link>
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              asChild
+              className="px-8 py-6 text-lg font-bold"
+            >
+              <Link href="/exam-papers" className="flex items-center gap-2">
+                <FileText className="h-5 w-5" />
+                Exam Papers
               </Link>
             </Button>
             <Button

@@ -76,6 +76,14 @@ export function Footer() {
               </li>
               <li>
                 <Link
+                  href="/exam-papers"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Exam Papers
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/contact"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
