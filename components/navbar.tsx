@@ -14,6 +14,7 @@ const navItems = [
   { name: "Home", href: "/" },
   { name: "Blogs", href: "/blog" },
   { name: "Branches", href: "/branches" },
+  { name: "Roadmaps", href: "/roadmaps" },
   { name: "DSA", href: "/dsa" },
   { name: "Quizzes", href: "/quiz" },
   { name: "Exam Papers", href: "/exam-papers" },
