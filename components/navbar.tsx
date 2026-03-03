@@ -17,6 +17,7 @@ const navItems = [
   { name: "Roadmaps", href: "/roadmaps" },
   { name: "DSA", href: "/dsa" },
   { name: "Quizzes", href: "/quiz" },
+  { name: "Books", href: "/books" },
   { name: "Exam Papers", href: "/exam-papers" },
   { name: "Contact", href: "/contact" },
 ];
