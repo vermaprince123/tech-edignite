@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { branches, blogPosts } from "@/lib/data";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
-import { ArrowRight, BookOpen } from "lucide-react";
+import { ArrowRight, BookOpen, BrainCircuit } from "lucide-react";
 
 export default function BranchesPage() {
   return (
@@ -60,13 +60,24 @@ export default function BranchesPage() {
                             <span>{branchPosts.length} Blogs</span>
                           </div>
                         </div>
-                        <Link
-                          href={`/blog?branch=${branch.id}`}
-                          className="inline-flex items-center gap-2 text-primary hover:underline font-medium"
-                        >
-                          View Blogs
-                          <ArrowRight className="h-4 w-4" />
-                        </Link>
+                        <div className="flex flex-col gap-2">
+                          <Link
+                            href={`/blog?branch=${branch.id}`}
+                            className="inline-flex items-center gap-2 text-primary hover:underline font-medium"
+                          >
+                            <BookOpen className="h-4 w-4" />
+                            View Blogs
+                            <ArrowRight className="h-4 w-4" />
+                          </Link>
+                          <Link
+                            href={`/quiz/${branch.id}`}
+                            className="inline-flex items-center gap-2 text-violet-600 dark:text-violet-400 hover:underline font-medium"
+                          >
+                            <BrainCircuit className="h-4 w-4" />
+                            Take Quiz
+                            <ArrowRight className="h-4 w-4" />
+                          </Link>
+                        </div>
                       </CardContent>
                     </Card>
                   </motion.div>

@@ -1267,4 +1267,669 @@ Network security is critical for protecting digital assets in our connected worl
     tags: ["Network Security", "Cybersecurity", "Encryption", "Firewall"],
     readTime: "10 min read",
   },
+  // NEW BLOGS - One per branch (added March 2026)
+  // CSE - New Blog
+  {
+    id: 15,
+    title: "Machine Learning Fundamentals: From Linear Regression to Neural Networks",
+    excerpt: "A comprehensive journey through core machine learning concepts—supervised and unsupervised learning, model evaluation, and an introduction to deep learning architectures.",
+    content: `Machine Learning (ML) is transforming every industry. This guide takes you from the basics to building your first neural network.
+
+## What is Machine Learning?
+
+Machine Learning is a subset of Artificial Intelligence that enables systems to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can access data and use it to learn for themselves.
+
+## Types of Machine Learning
+
+### Supervised Learning
+The model learns from labeled training data:
+- **Linear Regression**: Predict continuous values
+- **Logistic Regression**: Binary classification
+- **Decision Trees**: Hierarchical if-else decisions
+- **Random Forest**: Ensemble of decision trees
+- **SVM**: Find optimal hyperplane separator
+
+### Unsupervised Learning
+Finding patterns in unlabeled data:
+- **K-Means Clustering**: Group similar data
+- **PCA (Principal Component Analysis)**: Dimensionality reduction
+- **Autoencoders**: Feature learning
+
+### Reinforcement Learning
+Agent learns by interacting with an environment:
+- Reward-based feedback
+- Used in game playing (AlphaGo), robotics
+
+## Key Concepts
+
+### Bias-Variance Tradeoff
+- **High Bias (Underfitting)**: Model too simple
+- **High Variance (Overfitting)**: Model too complex
+- Goal: Find the sweet spot
+
+### Model Evaluation Metrics
+- **Accuracy**: Overall correctness
+- **Precision**: True positive rate among predicted positives
+- **Recall**: True positive rate among actual positives
+- **F1 Score**: Harmonic mean of precision and recall
+- **ROC-AUC**: Area under ROC curve
+
+## Introduction to Deep Learning
+
+Neural networks with multiple hidden layers:
+
+### Architecture
+- **Input Layer**: Receives features
+- **Hidden Layers**: Extract representations
+- **Output Layer**: Produces predictions
+
+### Activation Functions
+- ReLU: max(0, x)
+- Sigmoid: 1/(1+e^-x)
+- Softmax: Multi-class probabilities
+
+## Practical Tools
+
+- **Python + Scikit-learn**: Classical ML
+- **TensorFlow / PyTorch**: Deep learning
+- **Pandas + NumPy**: Data manipulation
+- **Matplotlib / Seaborn**: Visualization
+
+## Getting Started
+
+1. Learn Python and NumPy basics
+2. Practice on Kaggle datasets
+3. Implement ML algorithms from scratch
+4. Study deep learning architectures
+5. Work on real projects!
+
+Machine Learning is the future — start building today!`,
+    date: "2026-02-10",
+    branch: "CSE",
+    author: "Tech Edignite Team",
+    tags: ["Machine Learning", "AI", "Neural Networks", "Deep Learning"],
+    readTime: "12 min read",
+  },
+  // ECE - New Blog
+  {
+    id: 16,
+    title: "5G Technology: Architecture, Key Features & Future of Wireless Communication",
+    excerpt: "Explore the revolutionary 5G wireless standard—its network architecture, massive MIMO, millimeter waves, network slicing, and how it's reshaping connectivity worldwide.",
+    content: `5G is not just an upgrade — it's a fundamental rethinking of wireless communication, enabling applications previously impossible with 4G LTE.
+
+## What is 5G?
+
+5G (Fifth Generation) wireless technology delivers:
+- **Peak Speed**: Up to 20 Gbps (vs 1 Gbps for 4G)
+- **Latency**: As low as 1 ms (vs 30-50 ms for 4G)
+- **Connection Density**: 1 million devices per km²
+- **Reliability**: 99.999% uptime
+
+## Key Technical Features
+
+### Millimeter Wave (mmWave) Spectrum
+- Frequencies: 24 GHz – 100 GHz
+- Extremely high bandwidth
+- Short range — requires dense cell deployment
+- Used for stadiums, dense urban areas
+
+### Massive MIMO
+Multiple-Input Multiple-Output with many antennas:
+- Base stations with 64-256 antenna elements
+- Beamforming: Focus signal toward specific users
+- Spatial multiplexing: Serve multiple users simultaneously
+
+### Network Slicing
+Virtual networks tailored to specific use cases:
+- **eMBB**: Enhanced Mobile Broadband (streaming, AR/VR)
+- **URLLC**: Ultra-Reliable Low-Latency (autonomous vehicles, surgery)
+- **mMTC**: Massive Machine-Type Communications (IoT sensors)
+
+## 5G Architecture
+
+### Core Network (5GC)
+- Service-Based Architecture (SBA)
+- Cloud-native, microservices-based
+- Separation of control and user planes
+
+### Radio Access Network (RAN)
+- gNB (Next Generation NodeB): New 5G base stations
+- Open RAN: Multi-vendor interoperability
+
+## Applications
+
+1. **Autonomous Vehicles**: Ultra-low latency for real-time decisions
+2. **Smart Manufacturing**: Industry 4.0, real-time monitoring
+3. **Augmented/Virtual Reality**: Immersive experiences
+4. **Remote Healthcare**: Remote surgery, patient monitoring
+5. **Smart Cities**: Traffic management, environmental sensors
+
+## Challenges
+
+- High infrastructure cost
+- Health and safety concerns (ongoing research)
+- Spectrum availability and regulation
+- Battery life for IoT devices
+
+## India's 5G Rollout
+
+India launched 5G services in October 2022, with coverage expanding rapidly across major cities. Telecom companies like Jio and Airtel are the primary operators.
+
+5G is the backbone of our connected future — understand it deeply!`,
+    date: "2026-02-08",
+    branch: "ECE",
+    author: "Tech Edignite Team",
+    tags: ["5G", "Wireless Communication", "MIMO", "Network Architecture"],
+    readTime: "11 min read",
+  },
+  // EE - New Blog
+  {
+    id: 17,
+    title: "Renewable Energy Systems: Solar, Wind & Energy Storage Technologies",
+    excerpt: "Deep dive into solar PV systems, wind turbine technology, battery storage, grid integration challenges, and the future of sustainable energy engineering.",
+    content: `Renewable energy is no longer the future — it's the present. As electrical engineers, understanding these systems is critical for the energy transition.
+
+## Solar Photovoltaic (PV) Systems
+
+### How Solar Cells Work
+- Photons knock electrons loose from silicon atoms
+- Creates electron-hole pairs generating current
+- p-n junction drives current in one direction
+
+### Types of Solar Cells
+- **Monocrystalline**: Highest efficiency (20-25%), expensive
+- **Polycrystalline**: Moderate efficiency (15-20%), cost-effective
+- **Thin-Film (CdTe, CIGS)**: Flexible, lower efficiency
+
+### System Components
+1. Solar panels (modules)
+2. Inverter (DC to AC conversion)
+3. Charge controller
+4. Battery bank (off-grid systems)
+5. Grid connection interface
+
+### Maximum Power Point Tracking (MPPT)
+Algorithm to extract maximum power from PV panels regardless of weather conditions.
+
+## Wind Energy Systems
+
+### Types of Wind Turbines
+- **Horizontal Axis (HAWT)**: Most common, 3-blade design
+- **Vertical Axis (VAWT)**: Works in any wind direction, lower efficiency
+
+### Power Output
+P = ½ × ρ × A × v³ × Cp
+Where Cp is the coefficient of performance (Betz limit: max 59.3%)
+
+### Offshore vs Onshore
+- **Onshore**: Lower cost, easier maintenance
+- **Offshore**: Higher wind speeds, less visual impact
+
+## Energy Storage Technologies
+
+### Lithium-Ion Batteries
+- High energy density
+- Fast charge/discharge
+- Used in: Tesla Powerwall, grid-scale storage
+
+### Pumped Hydro Storage
+- 90%+ of global grid storage capacity
+- Stores energy as potential energy in water
+- Long discharge duration (hours to days)
+
+### Emerging Technologies
+- **Flow Batteries**: Vanadium redox, long duration
+- **Compressed Air Energy Storage (CAES)**
+- **Green Hydrogen**: Electrolysis + fuel cells
+
+## Grid Integration
+
+### Challenges
+- Variability and intermittency
+- Frequency regulation
+- Voltage stability
+- Transmission congestion
+
+### Solutions
+- Smart grid technologies
+- Demand-side management
+- Virtual Power Plants (VPPs)
+- Advanced forecasting
+
+## Career Opportunities
+
+- Renewable energy engineer
+- Grid integration specialist
+- Energy storage engineer
+- Solar/wind project developer
+- Power systems analyst
+
+The energy transition is the defining engineering challenge of our generation!`,
+    date: "2026-02-06",
+    branch: "EE",
+    author: "Tech Edignite Team",
+    tags: ["Renewable Energy", "Solar Power", "Wind Energy", "Energy Storage"],
+    readTime: "13 min read",
+  },
+  // ME - New Blog
+  {
+    id: 18,
+    title: "Robotics & Automation: Kinematics, Actuators & Programming Industrial Robots",
+    excerpt: "Explore the engineering behind industrial robots — forward and inverse kinematics, actuator types, end effectors, trajectory planning, and programming with ROS.",
+    content: `Robotics combines mechanical engineering, electrical engineering, and computer science to create machines that can perform complex tasks autonomously.
+
+## Robot Anatomy
+
+### Main Components
+- **Links**: Rigid structural members
+- **Joints**: Connect links, provide degrees of freedom (DOF)
+- **End Effector**: Tool at the end (gripper, welding torch, etc.)
+- **Actuators**: Drive joint motion
+- **Sensors**: Provide feedback
+- **Controller**: Processes inputs, generates outputs
+
+## Kinematics
+
+### Forward Kinematics
+Given joint angles → Find end-effector position and orientation
+- Uses Denavit-Hartenberg (DH) parameters
+- Result: 4×4 transformation matrix
+
+### Inverse Kinematics
+Given desired end-effector pose → Find required joint angles
+- More complex, may have multiple solutions
+- Numerical methods: Jacobian, Newton-Raphson
+
+## Types of Actuators
+
+### Electric
+- **DC Motors**: Simple, precise control
+- **Servo Motors**: Feedback control, high accuracy
+- **Stepper Motors**: Precise position control without feedback
+
+### Pneumatic
+- High speed, clean environment
+- Used in pick-and-place operations
+
+### Hydraulic
+- High force output
+- Used in heavy industry, construction
+
+## Robot Types
+
+1. **Cartesian (Gantry)**: Linear axes, simple programming
+2. **SCARA**: Fast, precise for assembly
+3. **Articulated (6-DOF)**: Most versatile — like human arm
+4. **Delta**: High-speed pick-and-place
+5. **Collaborative (Cobots)**: Safe for human interaction
+
+## Trajectory Planning
+
+### Joint Space Planning
+- Interpolate joint angles between waypoints
+- Smooth, predictable motion
+
+### Cartesian Space Planning
+- Control end-effector path (straight lines, arcs)
+- More complex computation
+
+## Robot Programming
+
+### Industrial Languages
+- **ABB**: RAPID
+- **KUKA**: KRL
+- **Fanuc**: Karel/TP
+
+### Open-Source: ROS (Robot Operating System)
+- Publisher-Subscriber architecture
+- Widely used in research and industry
+- Python/C++ interfaces
+
+## Applications
+
+1. **Automotive**: Welding, painting, assembly
+2. **Electronics**: PCB assembly, testing
+3. **Food & Beverage**: Packaging, sorting
+4. **Healthcare**: Surgical robots (Da Vinci)
+5. **Warehouse**: Amazon Kiva, logistics
+
+## Future Trends
+
+- Artificial Intelligence integration
+- Human-robot collaboration
+- Soft robotics
+- Swarm robotics
+- Autonomous mobile robots (AMRs)
+
+Robotics is the intersection of all engineering disciplines — master it!`,
+    date: "2026-02-04",
+    branch: "ME",
+    author: "Tech Edignite Team",
+    tags: ["Robotics", "Automation", "Kinematics", "ROS"],
+    readTime: "12 min read",
+  },
+  // CE - New Blog
+  {
+    id: 19,
+    title: "Sustainable Construction: Green Building Materials & LEED Certification",
+    excerpt: "Learn about eco-friendly construction materials, green building principles, energy-efficient design strategies, and how to achieve LEED certification in modern projects.",
+    content: `Sustainable construction is not just a trend — it's becoming a regulatory requirement and ethical obligation for civil engineers.
+
+## What is Green Building?
+
+Green buildings are designed to reduce environmental impact while improving the quality of life for occupants. Key goals:
+- Minimize energy consumption
+- Reduce water usage
+- Limit waste and pollution
+- Use sustainable materials
+- Create healthy indoor environments
+
+## LEED Certification
+
+### What is LEED?
+Leadership in Energy and Environmental Design — the world's most widely used green building rating system by the USGBC.
+
+### LEED Rating Levels
+- **Certified**: 40-49 points
+- **Silver**: 50-59 points
+- **Gold**: 60-79 points
+- **Platinum**: 80+ points
+
+### LEED Credit Categories
+1. **Location and Transportation** (16 pts)
+2. **Sustainable Sites** (10 pts)
+3. **Water Efficiency** (11 pts)
+4. **Energy and Atmosphere** (33 pts)
+5. **Materials and Resources** (13 pts)
+6. **Indoor Environment Quality** (16 pts)
+
+## Green Building Materials
+
+### Recycled Materials
+- **Fly Ash Concrete**: Replaces cement (up to 30%) — reduces CO₂
+- **Recycled Steel**: 100% recyclable, reduces mining
+- **Reclaimed Wood**: Reduces deforestation
+
+### Low-Carbon Alternatives
+- **Geopolymer Concrete**: 40-80% less CO₂ than OPC
+- **Mass Timber (CLT)**: Carbon sequestration, structural use
+- **Hempcrete**: High insulation, carbon-negative
+
+### Thermal Performance
+- **Phase Change Materials**: Store/release heat
+- **Aerogel Insulation**: Ultra-low conductivity
+- **Cool Roofs**: Reflect solar radiation
+
+## Energy-Efficient Design Strategies
+
+### Passive Design
+- Building orientation for solar gain
+- Natural ventilation strategies
+- Thermal mass for temperature stability
+- Daylighting to reduce artificial lighting
+
+### Active Systems
+- High-efficiency HVAC systems
+- LED lighting with smart controls
+- On-site solar panels
+- Rainwater harvesting
+
+## Embodied vs Operational Carbon
+
+- **Operational Carbon**: From building operation (HVAC, lighting)
+- **Embodied Carbon**: From material production, construction, demolition
+- Net-zero buildings minimize both
+
+## BIM for Sustainable Design
+
+Building Information Modeling (BIM) enables:
+- Energy simulation before construction
+- Material quantity optimization
+- Lifecycle cost analysis
+- Collaboration across disciplines
+
+## Indian Context
+
+- **GRIHA Rating**: India's national green building rating system
+- Bureau of Energy Efficiency (BEE) building standards
+- National Mission for Enhanced Energy Efficiency
+
+## Career Opportunities
+
+- Green building consultant
+- LEED Accredited Professional (AP)
+- Sustainability engineer
+- Environmental project manager
+
+Build smarter, greener, and for future generations!`,
+    date: "2026-02-02",
+    branch: "CE",
+    author: "Tech Edignite Team",
+    tags: ["Sustainable Construction", "Green Building", "LEED", "Eco-Friendly"],
+    readTime: "11 min read",
+  },
+  // CHE - New Blog
+  {
+    id: 20,
+    title: "Polymer Engineering: Synthesis, Properties & Industrial Applications",
+    excerpt: "Understand polymer chemistry, polymerization mechanisms, structure-property relationships, and the role of polymers in modern engineering applications from plastics to advanced composites.",
+    content: `Polymers are everywhere — from the plastic bottles we use to advanced aerospace composites. Chemical engineers are at the forefront of designing and processing these materials.
+
+## What are Polymers?
+
+Polymers are large molecules made of repeating structural units (monomers) bonded together. The word comes from Greek: poly (many) + meros (parts).
+
+### Classification by Origin
+- **Natural Polymers**: Rubber, cotton, silk, starch
+- **Synthetic Polymers**: Polyethylene, nylon, PVC, polyester
+
+### Classification by Structure
+- **Linear**: Chains in sequence (HDPE)
+- **Branched**: Side chains off backbone (LDPE)
+- **Cross-linked**: Chains connected by bridges (rubber)
+- **Network**: 3D interconnected structure (epoxy)
+
+## Polymerization Mechanisms
+
+### Addition (Chain Growth) Polymerization
+Monomers add one at a time to growing chain:
+1. **Initiation**: Creates reactive species
+2. **Propagation**: Chain grows
+3. **Termination**: Chain growth stops
+
+Examples: Polyethylene, polypropylene, PVC, polystyrene
+
+### Condensation (Step Growth) Polymerization
+Monomers react with each other, releasing small molecules (water, HCl):
+
+Examples: Nylon (polyamide), polyester, polycarbonate
+
+## Key Polymer Properties
+
+### Mechanical Properties
+- **Tensile Strength**: Resistance to pulling
+- **Elastic Modulus**: Stiffness measure
+- **Impact Strength**: Resistance to sudden forces
+
+### Thermal Properties
+- **Glass Transition Temperature (Tg)**: Transition from glassy to rubbery
+- **Melting Temperature (Tm)**: For semi-crystalline polymers
+- **Degradation Temperature**
+
+### Molecular Weight
+- Number-average (Mn)
+- Weight-average (Mw)
+- Polydispersity Index (PDI) = Mw/Mn
+
+## Processing Methods
+
+### Extrusion
+Continuous forcing of molten polymer through a die:
+- Pipes, films, profiles, cables
+
+### Injection Molding
+Melted polymer injected into closed mold:
+- Complex shaped parts, high production rates
+
+### Blow Molding
+For hollow parts:
+- Bottles, containers
+
+### Compression Molding
+For thermosets and rubber:
+- Electrical components, automotive parts
+
+## Advanced Polymers
+
+### Engineering Plastics
+- **PEEK**: High-temperature, aerospace
+- **PTFE (Teflon)**: Non-stick, chemical resistance
+- **Polycarbonate**: Optical clarity, impact resistance
+
+### Polymer Composites
+- **Carbon Fiber Reinforced Polymer (CFRP)**: Aerospace, sports
+- **Glass Fiber Reinforced Polymer (GFRP)**: Construction, automotive
+- **Nanocomposites**: Enhanced barrier, mechanical properties
+
+### Biodegradable Polymers
+- **PLA**: Corn-starch derived, compostable
+- **PHB/PHA**: Bio-based, biodegradable
+
+## Environmental Challenges
+
+- Plastic pollution in oceans
+- Microplastics contamination
+- Recycling limitations (chemical recycling advances)
+- Bio-based and compostable alternatives
+
+## Career Opportunities
+
+- Polymer synthesis researcher
+- Plastics process engineer
+- Composites design engineer
+- Rubber/elastomer technologist
+- Polymer recycling specialist
+
+Polymers are fundamental to modern life — chemical engineers shape their future!`,
+    date: "2026-01-30",
+    branch: "CHE",
+    author: "Tech Edignite Team",
+    tags: ["Polymer Engineering", "Plastics", "Composites", "Polymerization"],
+    readTime: "13 min read",
+  },
+  // IT - New Blog
+  {
+    id: 21,
+    title: "Cloud Computing & DevOps: Deploying Modern Applications at Scale",
+    excerpt: "Master cloud fundamentals with AWS, Azure & GCP, Docker containerization, Kubernetes orchestration, CI/CD pipelines, and best practices for deploying scalable applications.",
+    content: `Cloud computing and DevOps practices have fundamentally changed how software is built and deployed. Every IT engineer needs to understand these technologies.
+
+## Cloud Computing Fundamentals
+
+### Service Models
+- **IaaS** (Infrastructure as a Service): Rent servers, storage, networking (EC2, Azure VMs)
+- **PaaS** (Platform as a Service): Rent runtime environment (Heroku, App Engine)
+- **SaaS** (Software as a Service): Rent complete applications (Gmail, Salesforce)
+
+### Deployment Models
+- **Public Cloud**: AWS, Azure, GCP — shared infrastructure
+- **Private Cloud**: On-premises, single org
+- **Hybrid Cloud**: Combination of both
+- **Multi-Cloud**: Multiple providers
+
+### Major Cloud Providers
+- **AWS**: Market leader, 200+ services
+- **Microsoft Azure**: Strong enterprise integration
+- **Google Cloud (GCP)**: AI/ML excellence
+- **Oracle Cloud, IBM Cloud**: Niche enterprise use
+
+## Docker & Containerization
+
+### What is Docker?
+Containers package application code + dependencies + runtime into isolated, portable units.
+
+### Key Concepts
+- **Image**: Blueprint/template
+- **Container**: Running instance of an image
+- **Dockerfile**: Instructions to build image
+- **Registry**: Store images (Docker Hub, ECR)
+
+### Basic Commands
+\`\`\`
+docker build -t myapp .
+docker run -p 3000:3000 myapp
+docker push myrepo/myapp:latest
+\`\`\`
+
+## Kubernetes (K8s)
+
+Container orchestration for managing clusters of containers.
+
+### Core Components
+- **Pod**: Smallest deployable unit (one or more containers)
+- **Deployment**: Manages replica sets
+- **Service**: Exposes pods to network
+- **Ingress**: HTTP/HTTPS routing
+- **ConfigMap/Secret**: Configuration management
+
+### Why Kubernetes?
+- Auto-scaling
+- Self-healing (restart failed containers)
+- Rolling updates with zero downtime
+- Load balancing
+
+## DevOps Practices
+
+### CI/CD Pipeline
+**Continuous Integration**: Automatically build and test code on every commit
+**Continuous Delivery/Deployment**: Automatically deploy to production
+
+### Tools
+- **Git/GitHub**: Version control
+- **GitHub Actions / Jenkins / GitLab CI**: CI/CD automation
+- **Terraform**: Infrastructure as Code (IaC)
+- **Ansible**: Configuration management
+- **Prometheus + Grafana**: Monitoring and alerting
+
+### The DevOps Lifecycle
+1. **Plan**: Jira, Trello
+2. **Code**: Git, GitHub
+3. **Build**: Maven, npm, Docker
+4. **Test**: JUnit, Selenium, Postman
+5. **Release**: GitHub Actions, Jenkins
+6. **Deploy**: Kubernetes, Helm
+7. **Operate**: Prometheus, PagerDuty
+8. **Monitor**: Grafana, ELK Stack
+
+## Security in DevOps (DevSecOps)
+
+- Shift security left in the pipeline
+- Container image scanning (Trivy, Snyk)
+- Secret management (HashiCorp Vault)
+- SAST/DAST security testing
+- Compliance as Code
+
+## Cost Optimization
+
+- Right-sizing instances
+- Auto-scaling to match demand
+- Spot/Preemptible instances
+- Reserved instances for predictable workloads
+- Cost monitoring dashboards
+
+## Career Paths
+
+- Cloud Solutions Architect
+- DevOps/Platform Engineer
+- Site Reliability Engineer (SRE)
+- Kubernetes Administrator (CKA certified)
+- Cloud Security Engineer
+
+Cloud and DevOps skills are among the most in-demand in the IT industry today!`,
+    date: "2026-01-28",
+    branch: "IT",
+    author: "Tech Edignite Team",
+    tags: ["Cloud Computing", "DevOps", "Docker", "Kubernetes"],
+    readTime: "14 min read",
+  },
 ];
